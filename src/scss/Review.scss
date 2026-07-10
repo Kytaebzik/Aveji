@@ -1,0 +1,75 @@
+.rev{
+    @media (min-width: 376px) {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto auto;
+        gap: 20px;
+        row-gap: 32px;
+        margin: 120px 32px 0 32px
+    }
+    @media (max-width:375px) {
+        margin-top: 48px;           
+    }
+    &__text{
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 48px;
+        color: #212529;
+        grid-row: 1;
+        grid-column: 1/13;
+    }
+    &__item{
+        grid-row: 2;
+        box-shadow: inset 0 0 0 1px black;
+        grid-column: span 4;
+        width: 100%;
+        min-height: 327px;
+        &__img{
+            margin-top: 40px;
+            img{
+                max-width: 40px;
+                height: auto;
+            }
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            @media (max-width:375px) {
+                padding-top: 32px;
+            }
+        }
+        &__name{
+            width: 100%;
+            text-align: center;
+            font-family: var(--second-family);
+            font-weight: 600;
+            font-size: 18px;
+            color: #212529;
+            margin-top: 32px;
+            margin-bottom: 20px;
+        }
+        &__disc{
+            width: 100%;
+            box-sizing:border-box;
+            padding-left: 40px;
+            padding-right: 40px;
+            text-align: center;
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            text-align: center;
+            color: #212529;
+            @media (max-width:375px) {
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                text-align: center;
+                color: #212529;   
+                box-sizing:border-box;
+                padding-left: 32px;
+                padding-right: 32px;
+            }
+        }
+    }
+}

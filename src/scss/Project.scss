@@ -1,0 +1,151 @@
+.proj{
+    @media (min-width: 376px) {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto auto;
+        gap: 20px;
+        margin: 0 32px 0 32px;
+        grid-auto-flow:row;
+        margin-top: 120px;
+    }   
+    @media (max-width: 375px) {margin-top: 48px;}
+    &__name{
+        @media (min-width: 376px){
+            margin-bottom: 32px;
+            grid-column: 1/13;
+            font-family: var(--second-family);
+            font-weight: 400;
+            font-size: 48px;
+            color: #212529;
+        }
+        @media (max-width: 375px) {
+            font-family: var(--second-family);
+            font-weight: 400;
+            font-size: 28px;
+            color: #212529;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+    &__flexer{
+        @media (min-width: 376px){
+            display: grid; 
+            grid-template-columns: subgrid; 
+            width: 100%;
+            grid-column: 1/13;
+            row-gap: 20px;
+        }
+        @media (max-width: 375px) {
+            display: flex;
+            overflow:scroll;
+            width: 100%;
+        }
+    }
+    &__item{
+        @media (max-width: 375px) {
+            min-width: 252px;
+            height: 328px;
+            display: flex;
+            background-size: cover;
+            margin-right: 20px;
+            text-decoration: none;
+            &__first{
+                background-image: url('../assets/image/project-img.png');
+            }
+            &__second{
+                background-image: url('../assets/image/project-1.png');
+            }
+            &__third{
+                background-image: url('../assets/image/project-2.png');
+            }
+            &__four{
+                background-image: url('../assets/image/project-3.png');
+            }
+            &__five{
+                background-image: url('../assets/image/project-4.png');
+            }
+            &__six{
+                background-image: url('../assets/image/project.png');
+            }
+            &__pod{
+                align-self: flex-end;
+                width: 100%;
+                height: 44px;
+                display: flex;
+                align-items: center;
+                padding-left: 20px;
+                padding-right: 20px;
+                background: rgba(33, 37, 41, 0.5);
+                &__text{
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 140%;
+                    color: #fff;
+                }
+                &__link-photo{
+                    margin-left: auto;
+                }
+            }
+        }
+        @media (min-width: 376px){
+            grid-column: span 4;
+            display: flex;
+            width: 445px;
+            height: 580px;
+            text-decoration: none;
+            overflow: hidden;
+            transition: background-size ease-in-out 0.2s;
+            background-size: 100% 100%; 
+            background-position: center;
+            &__first{
+                background-image: url('../assets/image/project-img.png');
+            }
+            &__second{
+                background-image: url('../assets/image/project-1.png');
+            }
+            &__third{
+                background-image: url('../assets/image/project-2.png');
+            }
+            &__four{
+                background-image: url('../assets/image/project-3.png');
+            }
+            &__five{
+                background-image: url('../assets/image/project-4.png');
+            }
+            &__six{
+                background-image: url('../assets/image/project.png');
+            }
+            &__pod{
+                transition: all 0.2s ease-in-out;
+                position: relative;
+                top:66px;
+                align-self: flex-end;
+                width: 100%;
+                height: 66px;
+                display: flex;
+                align-items: center;
+                padding-left: 20px;
+                padding-right: 20px;
+                background: rgba(33, 37, 41, 0.5);
+                &__text{
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 140%;
+                    color: #fff;
+                }
+                &__link-photo{
+                    margin-left: auto;
+                }
+            }
+            &:hover &__pod{
+                top:0;
+            }
+            &:hover{
+                background-size: 110% 110%;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,84 @@
+.footer{
+    margin-left:32px ;
+    margin-top: 120px;
+    @media (min-width: 376px){
+        display: flex;
+    }
+    &__rights{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #212529;
+    }
+    &__links{
+        justify-self: center;
+        margin: auto;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #212529;
+        text-align: center;
+        a{
+            text-decoration: none;
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: #212529;
+        }
+    }
+    &__links2{
+        margin-left: auto;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #212529;
+        a{
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: #212529;
+            text-decoration: none;
+        }
+    }
+    @media (max-width:375px) {
+        &__sl{
+            display: none;
+        }
+        &__links2{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            a{
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 18px;
+                text-transform: uppercase;
+                color: #212529;
+                margin-right: 40px;
+            }
+        }
+        &__links{
+            display: flex;
+            flex-direction: column;
+            a{
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                color: #212529;
+                margin-bottom: 8px;
+            }
+        }
+        &__rights{
+            margin-top: 20px;
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+}

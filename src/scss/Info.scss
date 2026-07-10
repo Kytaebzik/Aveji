@@ -1,0 +1,95 @@
+.info{
+    @media (min-width: 376px) {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto auto;
+        gap: 20px;
+        row-gap: 44px;
+        margin: 120px 32px 0 32px
+    }
+    @media (max-width: 375px){
+        margin-top: 48px;
+    }
+    &__textD{
+        @media (max-width: 375px) {display: none;}
+        grid-row: 1;
+        grid-column: 1/6;
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 48px;
+        color: #212529;
+    }
+    &__textM{
+        @media (min-width: 376px) {display: none;}
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 28px;
+        color: #212529;
+        margin-bottom: 20px;
+    }
+    &__info-block{
+        @media (min-width: 376px) {
+            grid-row: 1;
+            grid-column: 7/11;
+            &__item{
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                color: #212529;
+                margin-bottom: 16px;
+            }
+        }
+        @media (max-width: 375px){
+            &__item{
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                color: #212529;
+                margin-bottom: 16px;
+            }
+            margin-bottom: 32px;
+        }
+    }
+    &__achivments{
+        @media (min-width: 376px) {
+            grid-row: 2;
+            grid-column: 7/9;
+            &__item{
+                margin-bottom: 24px;
+                &__name{
+                    font-family: var(--second-family);
+                    font-weight: 400;
+                    font-size: 36px;
+                    color: #212529;
+                }
+                &__disc{
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 140%;
+                    color: #212529;
+                }
+            }
+        }
+        @media (max-width: 375px){
+            &__item{
+                margin-bottom: 20px;
+                &__name{
+                    font-family: var(--second-family);
+                    font-weight: 400;
+                    font-size: 24px;
+                    color: #212529;
+                }
+                &__disc{
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 140%;
+                    color: #212529;
+                }
+            }
+        }
+    }
+}

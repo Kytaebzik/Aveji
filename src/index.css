@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'Helvetica'; /* Имя шрифта, по которому вы будете к нему обращаться */
+  src: url('./assets/font/HelveticaBold.woff2') format('woff2'); /* Путь к файлу шрифта */
+  font-weight: 700; /* Насыщенность (толщина) шрифта */
+  font-style: normal; /* Стиль (обычный или курсив) */
+  font-display: swap; /* Как шрифт отображается до загрузки */
+}
+@font-face {
+  font-family: 'Helvetica'; /* Имя шрифта, по которому вы будете к нему обращаться */
+  src: url('./assets/font/HelveticaRegular.woff2') format('woff2'); /* Путь к файлу шрифта */
+  font-weight: 400; /* Насыщенность (толщина) шрифта */
+  font-style: normal; /* Стиль (обычный или курсив) */
+  font-display: swap; /* Как шрифт отображается до загрузки */
+}
+@font-face {
+  font-family: 'Roboto'; /* Имя шрифта, по которому вы будете к нему обращаться */
+  src: url('./assets/font/RobotoRegular.woff2') format('woff2'); /* Путь к файлу шрифта */
+  font-weight: 400; /* Насыщенность (толщина) шрифта */
+  font-style: normal; /* Стиль (обычный или курсив) */
+  font-display: swap; /* Как шрифт отображается до загрузки */
+}
+@font-face {
+  font-family: 'Roboto'; /* Имя шрифта, по которому вы будете к нему обращаться */
+  src: url('./assets/font/RobotoMedium.woff2') format('woff2'); /* Путь к файлу шрифта */
+  font-weight: 500; /* Насыщенность (толщина) шрифта */
+  font-style: normal; /* Стиль (обычный или курсив) */
+  font-display: swap; /* Как шрифт отображается до загрузки */
+}
+
+
+
+
+body{
+  margin: 0;
+  max-width: 1440px;
+  margin: auto;
+  scroll-behavior: smooth;
+  @media (max-width: 375px){
+    padding: 0 15px 0 15px;
+    max-width: 344px;
+    margin: auto;
+  }
+}
+
+:root {
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Helvetica", sans-serif;
+}
