@@ -1,11 +1,11 @@
 .header{
     padding-top: 12px;
-    @media (max-width: 375px) {
+    @media (max-width: 392px) {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 20px;
     }
-    @media (min-width: 376px) {
+    @media (min-width: 393px) {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         gap: 20px;
@@ -13,7 +13,7 @@
 
     }
     &__logo{
-        @media (max-width: 375px){
+        @media (max-width: 392px){
             img{
                 height: 28px;
                 width: auto;
@@ -22,7 +22,7 @@
         }
     }
     &__ul{
-        @media (max-width: 375px){
+        @media (max-width: 392px){
             display: none;
         }
         grid-column:9;
@@ -61,7 +61,7 @@
         }
     }
     &__tel{
-        @media (max-width: 375px){
+        @media (max-width: 392px){
             display: none;
         }
         grid-column: -1;
@@ -72,7 +72,7 @@
         color: #212529;
     }
     &__menu{
-        @media (min-width: 376px){
+        @media (min-width: 393px){
             display: none;
         }
         grid-column: -1;

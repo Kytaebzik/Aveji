@@ -1,5 +1,5 @@
 .work{
-    @media (min-width: 376px) {
+    @media (min-width: 393px) {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: auto auto;
@@ -7,9 +7,9 @@
         row-gap: 44px;
         margin: 120px 32px 0 32px
     }
-    @media (max-width: 375px){margin-top: 48px;}
+    @media (max-width: 392px){margin-top: 48px;}
     &__text{
-        @media (min-width: 376px){
+        @media (min-width: 393px){
             font-family: var(--second-family);
             font-weight: 400;
             font-size: 48px;
@@ -17,7 +17,7 @@
             grid-column: 1/5;
             grid-row: 1;
         }
-        @media (max-width: 375px){
+        @media (max-width: 392px){
             font-family: var(--second-family);
             font-weight: 400;
             font-size: 28px;
@@ -26,7 +26,7 @@
         }
     }
     &__disc{
-        @media (min-width: 376px){
+        @media (min-width: 393px){
             font-family: var(--font-family);
             font-weight: 400;
             font-size: 16px;
@@ -36,7 +36,7 @@
             grid-column: 7/10;
             align-self: flex-end;
         }
-        @media (max-width: 375px){
+        @media (max-width: 392px){
             font-family: var(--font-family);
             font-weight: 400;
             font-size: 16px;
@@ -46,16 +46,16 @@
         }
     }
     &__ul{
-        @media (min-width: 376px){
+        @media (min-width: 393px){
             list-style-type: none;
             grid-column: 7/13;
             grid-row: 2;
         }
-        @media (max-width: 375px){
+        @media (max-width: 392px){
             list-style-type: none;
         }
         &__item{
-            @media (max-width: 375px){
+            @media (max-width: 392px){
                 margin-top: 20px;
                 &__name{
                     font-family: var(--second-family);
@@ -78,7 +78,7 @@
                     margin-top: 20px;
                 }
             }
-            @media (min-width: 376px){
+            @media (min-width: 393px){
                 margin-top: 24px;
                 display: grid;
                 grid-template-columns: 1fr 1fr;

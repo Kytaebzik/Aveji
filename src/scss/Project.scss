@@ -1,5 +1,5 @@
 .proj{
-    @media (min-width: 376px) {
+    @media (min-width: 393px) {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: auto auto;
@@ -8,9 +8,9 @@
         grid-auto-flow:row;
         margin-top: 120px;
     }   
-    @media (max-width: 375px) {margin-top: 48px;}
+    @media (max-width: 392px) {margin-top: 48px;}
     &__name{
-        @media (min-width: 376px){
+        @media (min-width: 393px){
             margin-bottom: 32px;
             grid-column: 1/13;
             font-family: var(--second-family);
@@ -18,7 +18,7 @@
             font-size: 48px;
             color: #212529;
         }
-        @media (max-width: 375px) {
+        @media (max-width: 392px) {
             font-family: var(--second-family);
             font-weight: 400;
             font-size: 28px;
@@ -28,21 +28,21 @@
         }
     }
     &__flexer{
-        @media (min-width: 376px){
+        @media (min-width: 393px){
             display: grid; 
             grid-template-columns: subgrid; 
             width: 100%;
             grid-column: 1/13;
             row-gap: 20px;
         }
-        @media (max-width: 375px) {
+        @media (max-width: 392px) {
             display: flex;
             overflow:scroll;
             width: 100%;
         }
     }
     &__item{
-        @media (max-width: 375px) {
+        @media (max-width: 392px) {
             min-width: 252px;
             height: 328px;
             display: flex;
@@ -88,7 +88,7 @@
                 }
             }
         }
-        @media (min-width: 376px){
+        @media (min-width: 393px){
             grid-column: span 4;
             display: flex;
             width: 445px;

@@ -35,7 +35,7 @@ body{
   max-width: 1440px;
   margin: auto;
   scroll-behavior: smooth;
-  @media (max-width: 375px){
+  @media (max-width: 392px){
     padding: 0 15px 0 15px;
     max-width: 344px;
     margin: auto;
@@ -45,4 +45,4 @@ body{
 :root {
   --font-family: "Roboto", sans-serif;
   --second-family: "Helvetica", sans-serif;
-}
+}git commit -m "Изменения размеров окон мобильных устройств"

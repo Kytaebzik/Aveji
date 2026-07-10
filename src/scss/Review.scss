@@ -1,5 +1,5 @@
 .rev{
-    @media (min-width: 376px) {
+    @media (min-width: 393px) {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: auto auto;
@@ -7,7 +7,7 @@
         row-gap: 32px;
         margin: 120px 32px 0 32px
     }
-    @media (max-width:375px) {
+    @media (max-width:392px) {
         margin-top: 48px;           
     }
     &__text{
@@ -33,7 +33,7 @@
             display: flex;
             width: 100%;
             justify-content: center;
-            @media (max-width:375px) {
+            @media (max-width:392px) {
                 padding-top: 32px;
             }
         }
@@ -59,7 +59,7 @@
             line-height: 140%;
             text-align: center;
             color: #212529;
-            @media (max-width:375px) {
+            @media (max-width:392px) {
                 font-family: var(--font-family);
                 font-weight: 400;
                 font-size: 16px;
